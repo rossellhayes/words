@@ -10,7 +10,7 @@ lemmas_frq <- readLines("data-raw/12dicts/Lemmatized/2+2+3frq.txt") %>%
     type = grep_case(
       line,
       "(?<=\\-{5} )\\d+(?= \\-{5})" ~ "class",
-      "(?<=    )\\w+"               ~ "variant",
+      "(?<=    )[\\w']+"            ~ "variant",
       "(?<! )\\w+"                  ~ "lemma",
       perl                          = TRUE
     )
