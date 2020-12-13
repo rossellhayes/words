@@ -1,0 +1,32 @@
+Package: words
+Title: Lists of English words
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Alexander",
+             family = "Rossell Hayes",
+             role = c("aut", "cre", "cph"),
+             email = "alexander@rossellhayes.com",
+             comment = c(ORCID = "0000-0001-9412-0457")),
+      person(given = "Alan",
+             family = "Beale",
+             role = "dtc",
+             email = "12dicts@pobox.com"),
+      person(given = "Kevin",
+             family = "Atkinson",
+             role = c("cph", "dtc"),
+             email = "kevina@users.sourceforge.net"),
+      person(given = "Luis",
+             family = "Von Ahn",
+             role = c("dtc", "cph")))
+Description: Provides lists of English words. May be useful for
+    word games and packages involving English grammar. Includes a large
+    list of English words, a large list of English lemmas and their
+    variants, a list of English lemmas and variants sorted by frequency,
+    and a list of potentially offensive words.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 2.10)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
