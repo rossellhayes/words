@@ -35,6 +35,8 @@ lemmas <- readLines("data-raw/12dicts/Lemmatized/2+2+3lem.txt") %>%
 words <- lemmas %>%
   unnest(variant) %>%
   {c(pull(., lemma), pull(., variant))} %>%
+  c(readLines("data-raw/12dicts/International/5d+2a.txt")) %>%
+  str_subset("^[a-z]+$") %>%
   unique() %>%
   sort()
 
