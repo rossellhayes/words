@@ -1,6 +1,6 @@
 Package: words
 Title: Lists of English words
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R: 
     c(person(given = "Alexander",
              family = "Rossell Hayes",
